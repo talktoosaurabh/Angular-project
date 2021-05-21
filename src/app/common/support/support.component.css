@@ -1,0 +1,46 @@
+.main_title h1{
+	font-weight: 500px;
+	font-size: 50px;
+	color: #000;
+	text-align: center;
+	padding-top: 30px;
+	font-family: 'Galada', cursive;
+}
+
+.main_title p{
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+}
+
+.contact_me{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.hire_me{
+	width: 160px;
+	height: 40px;
+	background-color: #ff7230;
+	font-size: 20px;
+	color: #fff;
+	outline: none;
+	border: none;
+	-webkit-transition :  all 0.3s linear;
+}
+
+.hire_me:hover{
+	background-color: #fff;
+	color: #ff7230;
+	outline: 2px solid #ff7230;
+}
+
+@media(max-width: 998px) {
+  .contact_img{
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+}
+
+

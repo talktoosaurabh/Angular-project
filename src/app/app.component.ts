@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule, Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngSchool';
+
+  hideElement = false;
+
+constructor(private router: Router) {
+  this.router.events.subscribe((event) => {
+    if (event instanceof NavigationEnd) {
+      if (event.url === '/courses') {
+        this.hideElement = true;
+      }  else {
+        this.hideElement = false;
+      }
+    }
+  });
+}
+
 }
